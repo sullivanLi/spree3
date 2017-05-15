@@ -167,6 +167,7 @@ GEM
     rabl (0.13.1)
       activesupport (>= 2.3.14)
     rack (2.0.1)
+    rack-cors (0.4.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.2)
@@ -339,6 +340,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   mysql2
   puma (~> 3.0)
+  rack-cors
   rails (~> 5.0.2)
   sass-rails (~> 5.0)
   spree (~> 3.2.0)
