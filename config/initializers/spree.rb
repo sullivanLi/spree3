@@ -18,5 +18,5 @@ end
 
 Spree.user_class = "Spree::User"
 Spree::Api::Config[:requires_authentication] = false
-Spree::Image.attachment_definitions[:attachment][:url] = '/spree/images/products/:id/:style/:basename.:extension'
+Spree::Image.attachment_definitions[:attachment][:url] = '/images/products/:id/:style/:basename.:extension'
 Spree::Image.attachment_definitions[:attachment][:path] = "../../images/products/:id/:style/:basename.:extension"
