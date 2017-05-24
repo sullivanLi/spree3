@@ -13,7 +13,10 @@ Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
+
 end
 
 Spree.user_class = "Spree::User"
 Spree::Api::Config[:requires_authentication] = false
+Spree::Image.attachment_definitions[:attachment][:url] = '/spree/images/products/:id/:style/:basename.:extension'
+Spree::Image.attachment_definitions[:attachment][:path] = "#{Rails.root}/images/products/:id/:style/:basename.:extension"
