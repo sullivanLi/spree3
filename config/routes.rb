@@ -1,7 +1,7 @@
 Spree::Core::Engine.add_routes do
   namespace :api, defaults: { format: 'json' } do
     namespace :v1 do
-     get '/users/login', to: 'users#login'
+     post '/users/login', to: 'users#login'
     end
   end
 end
